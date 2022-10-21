@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="message-container">
+            <p>Please allow camera access</p>
+        </div>
+
+        <div class="container">
+            <h1>ASCII Camera</h1>
+            <p id="ascii-image"></p>
+            <div class="control-container">
+                <input type="button" id="button" value="Pause Video">
+                <div>
+                    <label>Resolution:</label>
+                    <select id="resolution">
+                        <option>80x60</option>
+                        <option>120x90</option>
+                        <option selected>256x144</option>
+                        <option>320x240</option>
+                        <option>640x480</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Frame rate:</label>
+                    <select id="frame-rate">
+                        <option>1</option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option selected>30</option>
+                        <option>60</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <video id="player" autoplay></video>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <script src="main.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ascii-image {
+    font-family: 'Roboto Mono', monospace;
+    white-space: pre;
+    transform: scale(-2, 1);
+    border-top: 2px solid black ;
+    border-bottom: 2px solid black ;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.control-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 10vw;
+    min-width: 500px;
+}
+
+#message-container {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#message-container p {
+    width: auto;
+    height: auto; 
+    font-size: 2em;
+    text-align: center;
+}
+
+#player {
+    display: none;
+}
+
+#canvas {
+    display: none;
+}
